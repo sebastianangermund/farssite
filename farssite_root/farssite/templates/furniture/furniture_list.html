@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Uploaded photos</h1>
+{% load static %}
+{% if furniture_list %}
+    {% for furniture in furniture_list %}
+		<main class="gallery-wrapper">
+			<section class="gallery">
+				<figure class="gallery__item">
+					<a href="{% url 'furniture-detail' furniture.pk %}"><img src="{{ furniture.photo.url }}" alt="" class="gallery__image"></a>
+					<figcaption class="gallery__image-caption" id="bildtext">{{ furniture.description }}</figcaption>
+				</figure>
+			</section>
+		</main>
+    {% endfor %}
+{% else %}
+    <p>There are no uploaded photos.</p>
+{% endif %}
+{% endblock %}

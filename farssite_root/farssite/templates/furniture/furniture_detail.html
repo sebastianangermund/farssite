@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Title: {{ furniture.title }}</h2>
+
+{% load static %}
+{% if furniture.photo %}
+    <img src="{{ furniture.photo.url }}" alt="image" id="bild" style="width:555px;height:540px;">
+{% else %}
+        <p><strong>Error message:</strong> No file found</p>
+{% endif %}
+<p><strong>Description: </strong>{{ furniture.description }}</a></p>
+</div>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Davids Furniture</h1>
+
+{% if furniture_list %}
+
+    <p>The photo library currently contain {{ furniture_list.all.count }} photos</p>
+
+    <p id="welcome">Lorem ipsum dolor sit amet, nulla libero, class neque tortor, massa eu justo ut curabitur, cras urna faucibus donec, sem libero vel. Id vulputate ornare, ultricies eros justo suspendisse nulla nec in, nulla tristique id risus penatibus sit, justo maecenas sit velit in nunc. In amet scelerisque sed, aliquam in, nulla sed, sodales vel porta magnis, nonummy at eu vitae aliquam ac tellus. Massa quam tellus condimentum, aliquam magna duis, vulputate ante vel et tortor lacus mattis. In lacinia, eu sed ex mollis, amet nisl ridiculus consectetuer natoque non, libero velit vitae vel, maecenas interdum feugiat ligula sed. Arcu nulla, sed in vestibulum pulvinar eu tortor quisque, pede metus primis lobortis lacus, curabitur quod tellus tortor faucibus, eu ut libero sapien sem eu lacus. Aenean viverra, proin nam vel pharetra rhoncus ut neque, pulvinar id lacus cras aliquam integer pellentesque, quam etiam eget.
+
+	Blandit eleifend. Suspendisse vel ligula tempor id est eu, id mauris, amet maecenas lorem eros vehicula facilisi, ut leo mauris at habitasse mauris erat. Nec vitae molestie eget libero quisque velit, integer malesuada proin. Integer lacus lacus, proin erat ac eu vitae at ut, eget imperdiet dictum arcu sit et, odio donec condimentum vestibulum at duis. Elit at donec lorem.
+
+	Maecenas at integer libero lacus placerat eros, non integer, quam vivamus. Sed in, ante vestibulum, libero faucibus risus auctor congue vel eu, morbi a suscipit urna, diam at blandit. Pede pretium habitant sapien, nec sit iaculis, eu risus est vestibulum consequat ac elit. Viverra felis aenean torquent. Urna congue mauris suspendisse. Nec ut, ac id, ornare morbi enim curabitur, neque diam non justo. Eget class malesuada facilisis. Purus aenean vestibulum sem viverra cursus, dolor diam malesuada ac quaerat cursus, nunc libero, amet risus lectus a semper. Dolor elementum semper vel sollicitudin sed curabitur, ornare nibh libero, fringilla dignissim suscipit eu lacinia faucibus, eros fermentum velit. A nec aenean venenatis, mauris aliquam aliquam nec, ipsum ut laoreet libero vestibulum ac bibendum, mi vel, sodales morbi vestibulum nulla nec occaecat viverra. Dolores nulla ut vehicula leo vestibulum, maecenas duis nec vivamus, ad sed purus amet mauris, nec vulputate laoreet elit convallis, consequat et tellus in proin a adipiscing. Quam optio quisque lectus metus, egestas voluptas, facilisis quis elit tincidunt sed, tortor lacus donec massa, mauris imperdiet proin morbi leo nullam.
+
+	Quam dictum cursus pede tortor maecenas. Ullamcorper suspendisse nulla egestas aenean eget, odio orci in vel ullamcorper natoque, congue est amet quis libero magna. Rutrum consequat risus augue sit sit dolor, et quisque. Mauris est, nullam quam pede proin. Faucibus orci ut erat quisque, mollis dictumst suspendisse bibendum pellentesque, arcu sollicitudin suspendisse, in venenatis curabitur qui sociosqu wisi ante, fusce ligula taciti. Mi ut quisque. Nisl leo pede ultrices hendrerit, interdum tellus convallis.</p>
+
+{% else %}
+
+        <p>There are no uploaded photos.</p>
+
+{% endif %}
+
+{% endblock %}

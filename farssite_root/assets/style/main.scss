@@ -1,0 +1,184 @@
+/*
+font-family: 'Rajdhani', sans-serif;
+font-family: 'Ropa Sans', sans-serif;
+font-family: 'Chakra Petch', sans-serif;
+font-family: 'Major Mono Display', monospace;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 20px;
+  background-color: #30312B;
+  color: #DCDADA;
+}
+
+head {
+  padding-bottom: 5px;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0px 0px 0px 0px;
+}
+
+/*  ---- ~~~~~ NAVBAR START ~~~~~ ---- */
+
+div.nav-wrapper a, li {
+  float: left;
+  background-color: #333;
+  text-shadow: 0px 0px 0px black;
+}
+
+div.nav-wrapper li {
+	margin: 10px;
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #111;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  text-align: center;
+  padding: 0px 0px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #111;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 0px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #333}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*  ---- ~~~~~ NAVBAR END ~~~~~ ---- */
+
+/*  ---- ~~~~~ IMAGE GALLERY START ~~~~~ ---- */
+
+.gallery {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;	/*removing this should display images in a row*/
+}
+
+.gallery__item {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 1px 2px 40px 2px #111;
+}
+
+.gallery__item:hover {
+  background-color: #555;
+  transition: 0.2s;
+}
+
+.gallery__image {
+  width: 100%;
+  display: block;
+}
+
+@media only screen and (min-width: 33.75em) {
+  .gallery__item {
+    flex-basis: calc(50% - 1rem);
+  }
+}
+
+@media only screen and (min-width: 48em){
+  .gallery__item {
+    flex-basis: calc((100 / 3)% - 2rem);
+  }
+}
+
+/*  ---- ~~~~~ IMAGE GALLERY END ~~~~~ ---- */
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+h2 {
+  margin-top: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+p, li {
+  font-size: 16px; 
+  line-height: 2;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 2px black;
+}
+
+a {
+  font-family: 'Rajdhani', sans-serif;
+  color: #DCDADA;
+}
+
+#bild {
+  display: block;
+  margin: 0 auto;
+}
+
+#welcome {
+  display: block;
+  margin: 0 auto;
+  padding: 0px 20px 0px 20px;
+}
+
+img[src] {
+  padding-top: 0px;
+  background-color: #333;
+}

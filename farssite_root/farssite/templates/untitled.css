@@ -1,0 +1,10 @@
+    {% for furniture in furniture_list %}
+    <main class="gallery-wrapper">
+      <section class="gallery">
+        <figure class="gallery__item">
+          <img src="{{ furniture.photo.url }}" alt="" class="gallery__image" id="bild">
+          <figcaption class="gallery__image-caption" id="bildtext">{{ furniture.description }}</figcaption>
+        </figure>
+      </section>
+    </main>
+    {% endfor %}
