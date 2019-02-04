@@ -108,14 +108,15 @@ li.dropdown {
 .gallery {
 	width: 100%;
 	display: flex;
-	flex-flow: row wrap;	/*removing this should display images in a row*/
+	/*flex-flow: row wrap;	removing this should display images in a row*/
 }
 
 .gallery__item {
+  float: left;
   box-sizing: border-box;
-  width: 100%;
+  width: 50%;
   padding: 1rem;
-  margin: 1rem;
+  margin: 1rem auto;
   box-shadow: 1px 2px 40px 2px #111;
 }
 
@@ -129,18 +130,20 @@ li.dropdown {
   display: block;
 }
 
-@media only screen and (min-width: 33.75em) {
+@media only screen and (max-width: 33.75em) {
   .gallery__item {
-    flex-basis: calc(50% - 1rem);
+    /*flex-basis: calc(50% - 1rem);*/
+    width: 100%;
+    margin: 1rem;
   }
 }
-
+/*
 @media only screen and (min-width: 48em){
   .gallery__item {
     flex-basis: calc((100 / 3)% - 2rem);
   }
 }
-
+*/
 /*  ---- ~~~~~ IMAGE GALLERY END ~~~~~ ---- */
 
 h1 {
